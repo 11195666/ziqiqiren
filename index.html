@@ -70,9 +70,9 @@
   </style>
 </head>
 <body>
-	<h1><small>我每天都</small><span id="state">坐以待斃</span></h1>
+	<h1><img src="/asset/wuyifan.png" /><span id="state">我太长了，想变1cm</span></h1>
 
-  <font style="display:none;font-family: 'SourceHanSerifTW';">劃水摸魚,帶薪大便,無聊發呆,混吃等死,虛度光陰,無所事事,虛度年華,無精打采,行屍走肉,吊兒郎當,漫不經心,好逸惡勞,遊手好閑,碌碌無為,悲觀失望,得過且過,魂不守舍,渾渾噩噩,四大皆空,消極怠慢,心灰意冷,與世無爭,坐以待斃</font>
+  <font style="display:none;font-family: 'SourceHanSerifTW';">我太长了，想变1cm,你大概和我一样是个牙签？,10cm勉强达标,我是18cm自信满满,20cm大的**见过没有,在下古巨鸡,盘腰上太累了</font>
   <script>
     var states = [
       {
@@ -199,18 +199,18 @@
     _state.innerText = state.word;
     iframe.id='audio';
     iframe.style.display='none';
-    iframe.allow = 'autoplay'
-    iframe.src='https://audio.server.run/everyday.im/'+state.audio+'.mp3';
-    if (iframe.attachEvent){
-      iframe.attachEvent("onload", function(){
-        console.log('Load Success.')
-      });
-    } else {
-      iframe.onload = function(){
-        console.log('Load Success.')
-      };
-    }
-    document.body.appendChild(iframe);
+   <!-- iframe.allow = 'autoplay'-->
+   <!--  iframe.src='https://audio.server.run/everyday.im/'+state.audio+'.mp3';
+   <!--  if (iframe.attachEvent){
+   <!--    iframe.attachEvent("onload", function(){
+   <!--      console.log('Load Success.')
+   <!--   });
+   <!-- } else {
+   <!--   iframe.onload = function(){
+   <!--     console.log('Load Success.')
+   <!--   };
+   <!--  }
+  <!--   document.body.appendChild(iframe);
   </script>
 </body>
 </html>
