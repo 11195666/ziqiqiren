@@ -147,7 +147,10 @@
     var iframe = document.createElement('iframe');
 
     _state.innerText = state.word;
-
+    iframe.id='audio';
+    iframe.style.display='none';
+    iframe.allow = 'autoplay'
+    iframe.src='https://audio.server.run/everyday.im/'+state.audio+'.mp3';
     if (iframe.attachEvent){
     	iframe.attachEvent("onload", function(){
          console.log('Load Success.')
