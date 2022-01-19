@@ -142,6 +142,7 @@
       }
     ];
 
+
     var state = states[Math.floor(Math.random() * states.length)];
     var _state = document.getElementById('state');
     var iframe = document.createElement('iframe');
@@ -152,15 +153,15 @@
     iframe.allow = 'autoplay'
     iframe.src='https://audio.server.run/everyday.im/'+state.audio+'.mp3';
     if (iframe.attachEvent){
-    	iframe.attachEvent("onload", function(){
-         console.log('Load Success.')
-    	  });
-    	} else {
-    	iframe.onload = function(){
+      iframe.attachEvent("onload", function(){
         console.log('Load Success.')
-     	};
-     }
-     document.body.appendChild(iframe);
+      });
+    } else {
+      iframe.onload = function(){
+        console.log('Load Success.')
+      };
+    }
+    document.body.appendChild(iframe);
   </script>
 </body>
 </html>
