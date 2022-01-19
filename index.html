@@ -72,123 +72,74 @@
 <body>
 	<h1><img src="/assets/wuyifan.png" /><span id="state">我太长了，想变1cm</span></h1>
 
-  <font style="display:none;font-family: 'SourceHanSerifTW';">我太长了，想变1cm,你大概和我一样是个牙签？,10cm勉强达标,我是18cm自信满满,20cm大的**见过没有,在下古巨鸡,盘腰上太累了</font>
+  <font style="display:none;font-family: 'SourceHanSerifTW';">我太长了，想变1cm,你大概和我一样是个牙签？,
+	  10cm勉强达标,我是18cm自信满满,20cm大的**见过没有,在下古巨鸡,盘腰上太累了,下辈子做女人,这长度还不如不要,环切都能切到肉,大到非人类,非洲人看了都自卑,男默女泪</font>
   <script>
     var states = [
       {
-        word:'劃水摸魚',
+        word:'我太长了，想变1cm',
         audio:'hua-shui-mo-yu',
-        pinyin:'huá shuǐ mō yú'
+        pinyin:'wǒ tài cháng le xiǎng biàn 1 lí mǐ'
       },
       {
-        word:'帶薪大便',
+        word:'你大概和我一样是个牙签？',
         audio:'dai-xin-da-bian',
-        pinyin:'dài xīn dà biàn'
+        pinyin:'nǐ dà gài hé wǒ yī yàng shì gè yá qiān'
       },
       {
-        word:'無聊發呆',
+        word:'10cm勉强达标',
         audio:'wu-liao-fa-dai',
-        pinyin:'wú liáo fā dāi'
+        pinyin:'shí lí mǐ miǎn qiáng dá biāo'
       },
       {
-        word:'混吃等死',
+        word:'我是18cm自信满满',
         audio:'hun-chi-deng-si',
-        pinyin:'hún chī děng sǐ'
+        pinyin:'wǒ shì shí bā lí mǐ zì xìn mǎn mǎn'
       },
       {
-        word:'虛度光陰',
+        word:'20cm大的**见过没有',
         audio:'xu-du-guang-yin',
-        pinyin:'xū dù guāng yīn'
+        pinyin:'èr shí lí mǐ dà de jī ér jiàn guò méi yǒu'
       },
       {
-        word:'無所事事',
+        word:'在下古巨鸡',
         audio:'wu-suo-shi-shi',
-        pinyin:'wú suǒ shì shì'
+        pinyin:'zài xià gǔ jù jī'
       },
       {
-        word:'虛度年華',
+        word:'盘腰上太累了',
         audio:'xu-du-nian-hua',
-        pinyin:'xū dù nián huá'
+        pinyin:'pán yāo shàng tài lèi le'
       },
       {
-        word:'無精打采',
+        word:'下辈子做女人',
         audio:'wu-jing-da-cai',
-        pinyin:'wú jīng dǎ cǎi'
+        pinyin:'xià bèi zǐ zuò nǚ rén'
       },
       {
-        word:'行屍走肉',
+        word:'这长度还不如不要',
         audio:'xing-shi-zou-rou',
-        pinyin:'xíng shī zǒu ròu'
+        pinyin:'zhè zhǎng dù hái bú rú bú yào'
       },
       {
-        word:'吊兒郎當',
+        word:'环切都能切到肉',
         audio:'diao-er-lang-dang',
-        pinyin:'diào ér láng dāng'
+        pinyin:'huán qiē dōu néng qiē dào ròu'
       },
       {
-        word:'漫不經心',
+        word:'大到非人类',
         audio:'man-bu-jing-xin',
-        pinyin:'màn bù jīng xīn'
+        pinyin:'dà dào fēi rén lèi'
       },
       {
-        word:'好逸惡勞',
+        word:'非洲人看了都自卑',
         audio:'hao-yi-wu-lao',
-        pinyin:'hào yì wù láo'
+        pinyin:'fēi zhōu rén kàn le dōu zì bēi'
       },
       {
-        word:'遊手好閑',
+        word:'男默女泪',
         audio:'you-shou-hao-xian',
-        pinyin:'yóu shǒu hào xián'
-      },
-      {
-        word:'碌碌無為',
-        audio:'lu-lu-wu-wei',
-        pinyin:'lù lù wú wéi'
-      },
-      {
-        word:'悲觀失望',
-        audio:'bei-guan-shi-wang',
-        pinyin:'bēi guān shī wàng'
-      },
-      {
-        word:'得過且過',
-        audio:'de-guo-qie-guo',
-        pinyin:'dé guò qiě guò'
-      },
-      {
-        word:'魂不守舍',
-        audio:'hun-bu-shou-she',
-        pinyin:'hún bù shǒu shè'
-      },
-      {
-        word:'渾渾噩噩',
-        audio:'hun-hun-e-e',
-        pinyin:'hún hún è è'
-      },
-      {
-        word:'四大皆空',
-        audio:'si-da-jie-kong',
-        pinyin:'sì dà jiē kōng'
-      },
-      {
-        word:'消極怠慢',
-        audio:'xiao-ji-dai-man',
-        pinyin:'xiāo jí dài màn'
-      },
-      {
-        word:'心灰意冷',
-        audio:'xin-hui-yi-leng',
-        pinyin:'xīn huī yì lěng'
-      },
-      {
-        word:'與世無爭',
-        audio:'yu-shi-wu-zheng',
-        pinyin:'yǔ shì wú zhēng'
-      },
-      {
-        word:'坐以待斃',
-        audio:'zuo-yi-dai-bi',
-        pinyin:'zuò yǐ dài bì'
+        pinyin:'nán mò nǚ lèi'
       }
     ];
 
@@ -199,18 +150,18 @@
     _state.innerText = state.word;
     iframe.id='audio';
     iframe.style.display='none';
-   <!-- iframe.allow = 'autoplay'-->
-   <!--  iframe.src='https://audio.server.run/everyday.im/'+state.audio+'.mp3';
-   <!--  if (iframe.attachEvent){
-   <!--    iframe.attachEvent("onload", function(){
-   <!--      console.log('Load Success.')
-   <!--   });
-   <!-- } else {
-   <!--   iframe.onload = function(){
-   <!--     console.log('Load Success.')
-   <!--   };
-   <!--  }
-  <!--   document.body.appendChild(iframe);
+    iframe.allow = 'autoplay'-->
+    iframe.src='https://audio.server.run/everyday.im/'+state.audio+'.mp3';
+    if (iframe.attachEvent){
+    	iframe.attachEvent("onload", function(){
+         console.log('Load Success.')
+    	  });
+    	} else {
+    	iframe.onload = function(){
+        console.log('Load Success.')
+     	};
+     }
+     document.body.appendChild(iframe);
   </script>
 </body>
 </html>
